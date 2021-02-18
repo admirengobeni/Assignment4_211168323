@@ -1,5 +1,5 @@
 
-DROP TABLE IF EXISTS `students`;
+DROP TABLE `students`;
 
 CREATE TABLE `students` (
   `id` int(9) unsigned NOT NULL AUTO_INCREMENT,
@@ -46,7 +46,7 @@ INSERT INTO `students` (`id`, `first_name`, `last_name`, `city`, `phone`, `gende
 INSERT INTO `students` (`id`, `first_name`, `last_name`, `city`, `phone`, `gender`, `email`, `address`, `postcode`, `date_of_birth`) VALUES (29, 'Danilchev', 'North Esta', 'North Esta', '1-244-938-3948', 'Female', 'sdanilchevs@addtoany.com', '34989 Kuphal Inlet Suite 190 Gutkowskiville, IA 69417', 40221, '1992-10-04');
 INSERT INTO `students` (`id`, `first_name`, `last_name`, `city`, `phone`, `gender`, `email`, `address`, `postcode`, `date_of_birth`) VALUES (30, 'Whaplington', 'West Breanabury', 'West Breanabury', '1-045-399-1032x67023', 'Female', 'cwhaplingtont@cloudflare.com', '488 Martine Villages Bernadettetown, AR 39587-0766', 23031, '1998-04-05');
 
-DROP TABLE IF EXISTS `marks`;
+DROP TABLE `marks`;
 
 CREATE TABLE `marks` (
   `id` int(9) unsigned NOT NULL AUTO_INCREMENT,
