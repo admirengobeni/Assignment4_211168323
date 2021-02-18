@@ -14,7 +14,7 @@ services:
       - $HOME/Desktop/MySQL-Snippets/school.sql:/school.sql
       
 version: '3.1'
-services: 
+
   java:
     image: openjdk:7
     depends_on:
