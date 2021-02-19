@@ -28,9 +28,9 @@ public class DockerConnectMySQL {
 	String subject = rs.getString("subject");
 
          System.out.println("ID: " + id);
-         System.out.println(", First: " + mark);
-         System.out.println(", Last: " + last);
-	System.out.println(", Address: " + subject);
+         System.out.println(", Student id: " + student_id);
+         System.out.println(", Mark: " + mark);
+	System.out.println(", Subject: " + subject);
 
       }
       rs.close();
