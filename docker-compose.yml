@@ -18,8 +18,8 @@ services:
     restart: always
     ports:
       - 8080:8080
-      
-	java:
+       
+  java:
     image: openjdk:8
     depends_on:
     - db
