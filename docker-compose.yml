@@ -13,7 +13,7 @@ services:
     volumes:
       - $HOME/Desktop/MySQL-Snippets/school.sql:/school.sql
   
-    adminer:
+  adminer:
     image: adminer
     restart: always
     ports:
