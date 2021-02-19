@@ -2,10 +2,10 @@ import java.sql.*;
 
 public class DockerConnectMySQL {
    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-   static final String DB_URL = "jdbc:mysql://db:3306/firstdb";
+   static final String DB_URL = "jdbc:mysql://assignment4_211168323_db:3306/test_db";
 
-   static final String USER = "user";
-   static final String PASS = "pass123";
+   static final String USER = "root";
+   static final String PASS = "root";
    
    public static void main(String[] args) {
    Connection conn = null;
@@ -18,21 +18,20 @@ public class DockerConnectMySQL {
 
       stmt = conn.createStatement();
       String sql;
-      sql = "SELECT PersonID, FirstName, LastName, Address, City FROM Persons";
+      sql = "SELECT id, student_id, mark, subject FROM marks";
       ResultSet rs = stmt.executeQuery(sql);
 
       while(rs.next()){
-         int id  = rs.getInt("PersonID");
-         String first = rs.getString("FirstName");
-         String last = rs.getString("LastName");
-		 String address = rs.getString("Address");
-		 String city = rs.getString("City");
+         int id  = rs.getInt("id");
+         int student_id = rs.getString("student_id");
+         int mark = rs.getString("mark");
+	String subject = rs.getString("subject");
 
          System.out.println("ID: " + id);
-         System.out.println(", First: " + first);
+         System.out.println(", First: " + mark);
          System.out.println(", Last: " + last);
-		 System.out.println(", Address: " + address);
-		 System.out.println(", City: " + city);
+	System.out.println(", Address: " + subject);
+
       }
       rs.close();
       stmt.close();
