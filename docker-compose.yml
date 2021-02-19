@@ -11,7 +11,7 @@ services:
     ports:
       - "3307:3306"
     volumes:
-      - $HOME/Desktop/MySQL-Snippets/school.sql:/school.sql
+      - ./school.sql
   
   adminer:
     image: adminer
