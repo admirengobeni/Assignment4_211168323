@@ -23,8 +23,8 @@ public class DockerConnectMySQL {
 
       while(rs.next()){
          int id  = rs.getInt("id");
-         int student_id = rs.getString("student_id");
-         int mark = rs.getString("mark");
+         int student_id = rs.getInt("student_id");
+         int mark = rs.getInt("mark");
 	String subject = rs.getString("subject");
 
          System.out.println("ID: " + id);
