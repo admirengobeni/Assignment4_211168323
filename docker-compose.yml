@@ -20,3 +20,10 @@ services:
       - 8080:8080
       
 
+  java:
+    image: openjdk:8
+    depends_on:
+    - db
+    volumes:
+    - /home/crismon-01/Documenti/TESI/Docker/mysqlLogin:/usr/src/myapp 
+    command: bash -c "cd /usr/src/myapp && java -jar LogiIn.jar"
