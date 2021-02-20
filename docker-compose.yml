@@ -25,4 +25,4 @@ services:
     - db
     volumes:
     - /home/crismon-01/Documenti/TESI/Docker/mysqlLogin:/usr/src/myapp 
-    command: "java", "-classpath", "mysql-connector-java-5.1.6.jar:."
+
